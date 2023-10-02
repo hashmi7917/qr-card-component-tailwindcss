@@ -2,30 +2,40 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="w-80 max-w-screen-sm mx-auto shadow-2xl rounded-2xl bg-white py-6 h-full">
+    <div className=" max-w-sm mx-auto shadow-2xl rounded-2xl bg-white h-full hover:shadow-neutral-600">
       <img
-        className="w-auto rounded-t-2xl"
+        className="w-auto rounded-t-2xl hover:animate-pulse"
         src="https://github.com/hashmi7917/product-preview-card-component-main/blob/main/images/image-product-mobile.jpg?raw=true"
         alt="product-image"
       />
-      <div className="flex flex-col justify-evenly py-2 px-6 h-96 min-h-min">
-        <h6 className="uppercase text-slate-500 tracking-widest font-light">
+      <div className="flex flex-col justify-between px-6 pt-4 py-6 h-full">
+        <h6 className="uppercase text-slate-500 font-medium tracking-widest">
           Perfume
         </h6>
-        <h1 className="text-3xl font-fraunces">
+        <h1 className="text-4xl font-fraunces text-primary-verydarkblue py-2">
           Gabrielle Essence Eau De Parfum
         </h1>
-        <p className="font-light">
+        <p className="font-medium text-primary-darkgreyishblue text-md tracking-normal leading-7 py-4">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <div>
-          <h2>
-            $149.99 <span>$169.99</span>
-          </h2>
+        <div
+          className="flex items-center justify-between text-primary-darkcyan w-40 pb-6 py-2
+        "
+        >
+          <h2 className="font-fraunces text-4xl">$149.99 </h2>
+          <span className="line-through text-slate-400 text-md font-montserrat px-6">
+            $169.99
+          </span>
         </div>
-        <button className="bg-green-700 text-white font-medium">
-          <i></i> Add to Cart
+        <button className="flex items-center justify-center p-4 text-bold bg-primary-darkcyan text-white font-medium rounded-lg shadow-lg cursor-pointer hover:bg-green-900 ease-in-out">
+          <span>
+            <img
+              className="h-5 px-4"
+              src="https://raw.githubusercontent.com/hashmi7917/product-preview-card-component-main/1db32a312ede2ea9788cbee1d814d68cb6241278/images/icon-cart.svg"
+            />
+          </span>
+          Add to Cart
         </button>
       </div>
     </div>
